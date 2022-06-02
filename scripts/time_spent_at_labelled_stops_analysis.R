@@ -5,12 +5,10 @@ library(stringr)
 library(lubridate)
 
 # This script will focus on the time spent at labeled geozones (col 8)
-# 
 
 ####################################################################################
 # data input formatting and preparation
-setwd("/home/sean/Documentos/NewEnt_Logistics/History_Files/Formatted_History_Files/")
-out="/home/sean/Documentos/NewEnt_Logistics/History_Files/Plots/"
+out="./Plots/"
 # read in all data
 data <- read.table("All_Merged.txt", sep = "\t")
 # get date time formatted
