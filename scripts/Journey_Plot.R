@@ -4,9 +4,8 @@ library(viridis)
 library(stringr)
 library(lubridate)
 
-setwd("/home/sean/Documentos/NewEnt_Logistics/History_Files/Formatted_History_Files/")
-out="/home/sean/Documentos/NewEnt_Logistics/History_Files/Plots/route_plots/"
-files <- list.files(path="/home/sean/Documentos/NewEnt_Logistics/History_Files/Formatted_History_Files/", 
+out="./Plots/route_plots/"
+files <- list.files(path="./Formatted_History_Files/", 
                     pattern="*)_Merged.txt", full.names=FALSE, recursive=FALSE)
 
 trip_route_plot <- function(f){
